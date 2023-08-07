@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- end font awesome icons -->
 
     <!-- bootstrap -->
@@ -21,6 +21,11 @@
 
     <!-- end bootstrap -->
 
+    <!-- aos animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- end aos animation on scroll -->
 
     <title>هوم باك | خدمات نقل الأثاث والعفش. أفضل شركة لنقل العفش</title>
     <meta name="description"
@@ -51,7 +56,12 @@
     <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #ebb97f;">
         <div class="container">
 
-            <div class="navbar-collapse collapse" id="main">
+            <a href="../index.html" class="logo">
+                <div class="imgContainer">
+                    <img alt="هوم باك" src="../image/logo.webp">
+                </div>
+            </a>
+            <div class="navbar-collapse collapse" id="main" >
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3 " aria-current="page" href="../index.html">الصفحة الرئيسية</a>
@@ -69,25 +79,14 @@
 
                 </ul>
             </div>
-            <a href="../index.html" class="logo">
-                <div class="imgContainer">
-                    <img alt="هوم باك" src="../image/logo.webp">
-                </div>
-            </a>
+           
 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main"
                 aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="svg-inline--fa fa-bars" style="color: #6495ED;" aria-hidden="true" focusable="false"
-                    data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512" data-fa-i2svg="">
-                    <path fill="currentColor"
-                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z">
-                    </path>
-                </svg><!-- <i class="fa-solid fa-bars " style="color: #6495ED;"></i> Font Awesome fontawesome.com -->
+                <i class="fas fa-solid fa-bars" ></i>
             </button>
         </div>
     </nav>
-
 
 
 
@@ -100,7 +99,7 @@
    " id="home">
 
 
-        <div class="container content">
+        <div class="container content"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
 
             <p style="font-size: 35px; color: var(--light-color);"> الخدمات التي تقدمها <span class="home-pac">هوم
                     باك</span>
@@ -112,53 +111,193 @@
 
 
 
-    <section class="about mb-5" id="about">
+    <section class="our-service" id="our-service">
+
         <h2 class="heading">خدماتنا </h2>
 
 
+        <div class="row mb-5">
+
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card card-2" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="card-header">
+                        <div class="outer-icon">
+
+                            <i class="fas fa-couch"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            نقل الأساس </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card  card-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="card-header  card-header">
+
+                        <div class="outer-icon">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            التخزين </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card card-2" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="card-header">
+                        <div class="outer-icon">
+
+                            <i class="fas  fa-people-carry-box"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            الفك والتركيب والتغليف
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card card-1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="card-header">
+                        <div class="outer-icon">
+
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            خدمة 24/7
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card card-2" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="card-header">
+                        <div class="outer-icon">
+
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            أسعار تنافسية </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="card card-1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="card-header">
+                        <div class="outer-icon">
+
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="title">
+                            نقل عفش المنازل والفلل والمكاتب والشركات </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
         <div class="row">
 
 
 
 
-            <div class="col-lg-6 col-md-6 col-sm-12 ">
-                <p style="font-size: 18px; text-align: justify;margin-left: 20px; margin-bottom: 2.5em;">
-                    شركة <span class="home-pac">هوم باك</span> تعد واحدة من أفضل شركات نقل العفش والأثاث في السوق. وتحرص
-                    الشركة على توفير أفضل خدمات
-                    النقل بأسعار معقولة، وبجودة عالية، واهتمام كبير بعملية التعبئة والتغليف. تعتبر التعبئة والتغليف من
-                    أهم العوامل التي تؤثر على نقل العفش والأثاث بأمان وسلامة. وتتمثل أهميته في الحفاظ على سلامة الأثاث
-                    ومنع تعرضه للتلف والخدش والكسر خلال عملية النقل. ومن خلال استخدام مواد التعبئة والتغليف المناسبة.
-                    تضمن شركة <span class="home-pac">هوم باك</span> حماية الأثاث من الأضرار المحتملة. وتقليل التكاليف
-                    الناجمة عن تلف الأثاث خلال
-                    عملية النقل. وتستخدم شركة <span class="home-pac">هوم باك</span> أحدث التقنيات والمواد المستخدمة في
-                    عمليات التعبئة والتغليف،
-                    وتضمن تغليف كل قطعة من الأثاث بشكل محكم ومناسب. مما يساعد في حمايتها من الصدمات والتلف أثناء عملية
-                    النقل. كما تعتمد الشركة على فريق عمل مدرب ومؤهل في عمليات التعبئة والتغليف والنقل. حيث يتمتع هذا الفريق
-                    بالخبرة والكفاءة اللازمة للتعامل مع جميع أنواع الأثاث بكفاءة ودقة عالية. بالإضافة إلى ذلك، فإن شركة
-                    <span class="home-pac">هوم باك</span> تهتم بتوفير خدمات النقل بأسعار معقولة وبأفضل جودة، مما يجعلها الخيار الأمثل للأفراد
-                    والعائلات الذين يرغبون في نقل أثاثهم بأمان وسهولة. وعند البحث عن شركة نقل عفش وأثاث بمستوى جودة عال
-                    ... وخدمة متميزة، يمكن الاعتماد على شركة <span class="home-pac">هوم باك</span> لتلبية احتياجات العملاء بشكل مثالي. لا يمكن إغفال
-                    أهمية التعبئة والتغليف في عملية نقل العفش والأثاث، حيث إنها تضمن سلامة وحفاظ الأثاث على الشكل
-                    والحالة التي كان عليها قبل النقل. ومن خلال الاعتماد على شركة <span class="home-pac">هوم باك</span> في عملية نقل العفش والأثاث،
-                    يمكن للعملاء الاطمئنان على أن أثاثهم سيصل بسلامة إلى وجهته النهائية، دون تعرضه لأي ضرر. بالإضافة إلى
-                    ذلك، يمكن أن يساعد استخدام شركة "هوم باك" في عملية نقل العفش والأثاث على توفير الوقت والجهد، حيث يتم
-                    التعامل مع جميع مراحل العملية بدقة واهتمام، من التعبئة والتغليف إلى النقل والتفريغ في الموقع الجديد.
-                    ومن خلال الاستعانة بخدمات هذه الشركة، يمكن للعملاء توفير الكثير من الوقت والجهد، والتركيز على
-                    الجوانب الأخرى المهمة للانتقال إلى الموقع الجديد. بالختام، يمكن القول إن التعبئة والتغليف تعد عاملاً
-                    حاسمًا في عملية نقل العفش والأثاث، ويمكن الاعتماد على شركة <span class="home-pac">هوم باك</span> لتوفير خدمات النقل بأفضل جودة
-                    وبأسعار معقولة. ويمكن للعملاء الاستفادة من خدمات الشركة لتسهيل عملية الانتقال إلى الموقع الجديد
-                    بأمان وسهولة.
+            <p style="font-size: 18px; text-align: justify;margin-left: 20px; margin-bottom: 2.5em;">
+                شركة <span class="home-pac">هوم باك</span> تعد واحدة من أفضل شركات نقل العفش والأثاث في السوق. وتحرص
+                الشركة على توفير أفضل خدمات
+                النقل بأسعار معقولة، وبجودة عالية، واهتمام كبير بعملية التعبئة والتغليف. تعتبر التعبئة والتغليف من
+                أهم العوامل التي تؤثر على نقل العفش والأثاث بأمان وسلامة. وتتمثل أهميته في الحفاظ على سلامة الأثاث
+                ومنع تعرضه للتلف والخدش والكسر خلال عملية النقل. ومن خلال استخدام مواد التعبئة والتغليف المناسبة.
+                تضمن شركة <span class="home-pac">هوم باك</span> حماية الأثاث من الأضرار المحتملة. وتقليل التكاليف
+                الناجمة عن تلف الأثاث خلال
+                عملية النقل. وتستخدم شركة <span class="home-pac">هوم باك</span> أحدث التقنيات والمواد المستخدمة في
+                عمليات التعبئة والتغليف،
+                وتضمن تغليف كل قطعة من الأثاث بشكل محكم ومناسب. مما يساعد في حمايتها من الصدمات والتلف أثناء عملية
+                النقل. كما تعتمد الشركة على فريق عمل مدرب ومؤهل في عمليات التعبئة والتغليف والنقل. حيث يتمتع هذا
+                الفريق
+                بالخبرة والكفاءة اللازمة للتعامل مع جميع أنواع الأثاث بكفاءة ودقة عالية. بالإضافة إلى ذلك، فإن شركة
+                <span class="home-pac">هوم باك</span> تهتم بتوفير خدمات النقل بأسعار معقولة وبأفضل جودة، مما يجعلها
+                الخيار الأمثل للأفراد
+                والعائلات الذين يرغبون في نقل أثاثهم بأمان وسهولة. وعند البحث عن شركة نقل عفش وأثاث بمستوى جودة عال
+                ... وخدمة متميزة، يمكن الاعتماد على شركة <span class="home-pac">هوم باك</span> لتلبية احتياجات
+                العملاء بشكل مثالي. لا يمكن إغفال
+                أهمية التعبئة والتغليف في عملية نقل العفش والأثاث، حيث إنها تضمن سلامة وحفاظ الأثاث على الشكل
+                والحالة التي كان عليها قبل النقل. ومن خلال الاعتماد على شركة <span class="home-pac">هوم باك</span>
+                في عملية نقل العفش والأثاث،
+                يمكن للعملاء الاطمئنان على أن أثاثهم سيصل بسلامة إلى وجهته النهائية، دون تعرضه لأي ضرر. بالإضافة إلى
+                ذلك، يمكن أن يساعد استخدام شركة <span class="home-pac">هوم باك</span> في عملية نقل العفش والأثاث على
+                توفير الوقت والجهد، حيث يتم
+                التعامل مع جميع مراحل العملية بدقة واهتمام، من التعبئة والتغليف إلى النقل والتفريغ في الموقع الجديد.
+                ومن خلال الاستعانة بخدمات هذه الشركة، يمكن للعملاء توفير الكثير من الوقت والجهد، والتركيز على
+                الجوانب الأخرى المهمة للانتقال إلى الموقع الجديد. بالختام، يمكن القول إن التعبئة والتغليف تعد عاملاً
+                حاسمًا في عملية نقل العفش والأثاث، ويمكن الاعتماد على شركة <span class="home-pac">هوم باك</span>
+                لتوفير خدمات النقل بأفضل جودة
+                وبأسعار معقولة. ويمكن للعملاء الاستفادة من خدمات الشركة لتسهيل عملية الانتقال إلى الموقع الجديد
+                بأمان وسهولة.
 
 
-                </p>
-
-                
-            </div>
+            </p>
 
 
-            <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
 
-                <div id="carouselServicesVideos" class="carousel slide">
+            <div id="carouselServicesVideos" class="carousel slide ">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls>
+                            <source src="../video/vid-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption ">
+                            <p>فك العناصر وتغليفها جيداً قبل النقل</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="../video/vid-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption ">
+                            <p>خدمات النقل المحلي</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="../video/vid-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption">
+                            <p>العناصر قابلة الآن للنقل والتخزين</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container carousel-control ">
+
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselServicesVideos" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -167,59 +306,183 @@
                         <button type="button" data-bs-target="#carouselServicesVideos" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <video controls>
-                                <source src="../video/vid-1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="carousel-caption ">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <video controls>
-                                <source src="../video/vid-2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="carousel-caption ">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <video controls>
-                                <source src="../video/vid-3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="carousel-caption">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container carousel-control ">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicesVideos"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselServicesVideos"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicesVideos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                            <i class="fas fa-chevron-left"></i>
 
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselServicesVideos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                            <i class="fas fa-chevron-right"></i>
+
+                        </span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
 
 
     </section>
 
+    <section class="why-our-services" id="why-our-services">
 
+        <h2 class="heading">
+            لماذا نحن
+            <p class="sub-heading">
+                ما الذي يدفعك لاختيار خدمات <span class="home-pac">هوم باك</span>
+            </p>
+        </h2>
+
+        <div class="row">
+            <div class="service  col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800">
+                    تخلص من عناء نقل العفش مع خدمتنا الشاملة
+                </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000">
+                    تعد خدمة نقل العفش من المهام الشاقة والمرهقة التي يواجهها الكثيرون عند الانتقال إلى منازلهم الجديدة.
+                    حيث يتطلب الأمر الكثير من الجهد، والوقت، والمال، لضمان نقل الأثاث بأمان وسلامة.
+                    ولحسن الحظ، توفر العديد من شركات نقل العفش الخدمات اللازمة لتخفيف هذا العبء وتسهيل عملية الانتقال
+                    للعملاء. ومن بين هذه الشركات تبرز خدمة نقل العفش المتميزة التي تقدمها شركة <span
+                        class="home-pac">هوم باك</span>.
+                    تقدم شركة <span class="home-pac">هوم باك</span> خدمات نقل العفش الشاملة التي تشمل جميع مراحل عملية
+                    النقل، من تغليف الأثاث، وتحميله
+                    إلى الشاحنة، ونقله بأمان وسلامة، وتفريغه في المنزل الجديد، وتركيبه مرة أخرى في الموقع المحدد.
+                    وتستخدم الشركة أحدث التقنيات والأدوات لتوفير خدمات عالية الجودة والكفاءة.
+                    بالإضافة إلى ذلك، تقدم شركة <span class="home-pac">هوم باك</span> خدمات تغليف الأثاث باستخدام مواد
+                    عالية الجودة لضمان حماية الأثاث
+                    من الخدوش والكسر أثناء عملية النقل. وتوفر الشركة أيضاً خدمات التخزين للعملاء الذين يحتاجون إلى تخزين
+                    أثاثهم لفترة مؤقتة قبل الانتقال إلى المنزل الجديد.
+                    وتتميز شركة <span class="home-pac">هوم باك</span> بفريق عمل مؤهل ومدرب تدريباً عالياً على التعامل مع
+                    جميع أنواع الأثاث. والذين
+                    يحرصون على نقل الأثاث بأمان وسلامة دون أي تلف أو خسائر.
+
+                </div>
+            </div>
+
+
+            <div class="service  col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800" data-aos-delay="300">
+                    نحن نعرف كيفية النقل بأمان: خدمات نقل العفش بعناية شديدة
+                </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="300">
+                    تعتبر خدمات نقل العفش من الخدمات الحيوية التي يحتاجها الكثير من الأشخاص في مختلف مراحل الحياة. سواء
+                    كانوا ينتقلون من منزل إلى آخر أو من مدينة إلى أخرى أو حتى من دولة إلى أخرى. ومع ذلك، يعد نقل العفش
+                    مهمة صعبة ومرهقة يمكن أن تتسبب في تلف الأثاث والممتلكات الشخصية. لهذا السبب، يبحث الكثيرون عن خدمات
+                    نقل العفش التي توفر العناية الشديدة والاهتمام بتفاصيل العملية.
+                    وفي هذا الصدد، توفر شركة <span class="home-pac">هوم باك</span> لنقل العفش خدمات نقل العفش بعناية
+                    شديدة، والتي تقدمها فرق عمل
+                    مدربة ومتخصصة في هذا المجال. فريق العمل لدينا يضم فنيين وعمال ذوي خبرة عالية في مجال نقل العفش، مما
+                    يجعل عملية النقل سهلة وميسرة للعملاء.
+                    تستخدم شركة <span class="home-pac">هوم باك</span> لنقل العفش أحدث التقنيات والأدوات المتاحة لضمان
+                    السلامة والحفاظ على سلامة الأثاث
+                    والممتلكات الشخصية. كما نقوم بتوفير المواد اللازمة لتغليف الأثاث والممتلكات الشخصية وتحميلها
+                    وتفريغها بأمان. بالإضافة إلى ذلك، نوفر خدمات التفكيك والتركيب للأثاث، مما يسهل عملية النقل ويوفر
+                    الكثير من الوقت والجهد.
+                    تتميز شركة <span class="home-pac">هوم باك</span> لنقل العفش بالعناية الشديدة بتوفير خدمات نقل العفش
+                    بأسعار معقولة وتنافسية. ونحن
+                    نضمن رضا عملائنا من خلال تقديم خدمات نقل العفش الاحترافية بأعلى مستويات الجودة والخدمة
+                </div>
+            </div>
+
+            <div class="service  col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800" data-aos-delay="600">
+                    نقل العفش بأسعار معقولة: خدمات نقل العفش الاقتصادية
+                </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="600">
+                    خدمات نقل العفش هي خدمات حيوية لكل شخص يرغب في نقل منزله أو مكتبه بطريقة آمنة ومنظمة. لكن العديد من
+                    الأشخاص يواجهون مشكلة في اختيار شركة نقل عفش بأسعار معقولة.
+                    قد تكون خدمات نقل العفش الاقتصادية تبدو وكأنها ذات جودة منخفضة، ولكن ذلك ليس بالضرورة صحيحاً. فهناك
+                    العديد من الشركات التي تقدم خدمات نقل العفش بأسعار معقولة وجودة عالية.
+                    عندما تبحث عن شركة نقل عفش بأسعار معقولة، يجب عليك البحث عن الشركات التي تقدم خدمات مخصصة لاحتياجاتك
+                    الفردية، وتعمل على توفير خدمات عالية الجودة بأسعار تنافسية.
+                    تقدم شركة <span class="home-pac">هوم باك</span> خدمات نقل العفش الاقتصادية للعملاء في الدمام
+                    والمناطق المحيطة بها. تتضمن خدماتها
+                    تفكيك الأثاث وتغليفه بأفضل الطرق، ونقله بأمان إلى وجهته الجديدة. كما توفر الشركة خدمات التركيب
+                    والترتيب اللازمة بعد النقل. تعمل شركة <span class="home-pac">هوم باك</span> على توفير خدمات نقل
+                    العفش بأسعار معقولة دون التأثير
+                    على الجودة، حيث تستخدم أفضل المواد والأدوات للحفاظ على سلامة الأثاث وحمايته من التلف أثناء النقل.
+                    بالإضافة إلى ذلك، تقدم شركة <span class="home-pac">هوم باك</span> خدمات تخزين الأثاث بأسعار معقولة
+                    للعملاء الذين يحتاجون إلى تخزين
+                    أثاثهم لفترة مؤقتة.
+
+                </div>
+            </div>
+
+            <div class="service  col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800">
+                    نقدم حلولاً مخصصة لنقل العفش لشركات ومؤسسات كبيرة
+                </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000">
+                    تعتبر شركة <span class="home-pac">هوم باك</span> لنقل العفش خيارًا ممتازًا للشركات والمؤسسات الكبيرة
+                    التي تحتاج إلى نقل كميات
+                    كبيرة من الأثاث والمعدات والأجهزة. وتقدم الشركة حلولًا مخصصة لتلبية احتياجات هذه الشركات وتلبية
+                    متطلباتها بكفاءة وفعالية.
+                    تتميز شركة <span class="home-pac">هوم باك</span> بتوفير فريق عمل مدرب ومتخصص في نقل العفش، بالإضافة
+                    إلى توفير جميع الأدوات
+                    والمعدات اللازمة لنقل العفش بسرعة وسهولة. وتقدم الشركة خدماتها للشركات والمؤسسات الكبيرة في جميع
+                    أنحاء المملكة العربية السعودية.
+                    وتتميز خدمات <span class="home-pac">هوم باك</span> المخصصة لنقل العفش للشركات والمؤسسات بالتخطيط
+                    الجيد والدقة في التنفيذ، حيث يتم
+                    تخصيص فريق خاص لكل عميل يتولى مهمة تغليف وتفكيك ونقل الأثاث والمعدات بأمان ودون تلف.
+                    وتهتم الشركة بالتعامل مع كل عميل على حدة وفقًا لاحتياجاته الخاصة، وتقدم حلولًا مخصصة تلبي متطلبات
+                    الشركة بشكل كامل، بما في ذلك التخزين المؤقت للأثاث إذا لزم الأمر.
+                    وباختصار، فإن شركة <span class="home-pac">هوم باك</span> لنقل العفش تقدم حلولًا شاملة ومخصصة لنقل
+                    العفش للشركات والمؤسسات الكبيرة،
+                    مما يجعلها خيارًا مثاليًا لأي شركة تحتاج إلى نقل كميات كبيرة من الأثاث والمعدات بكفاءة وفعالية.
+
+                </div>
+            </div>
+            <div class="service  col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800" data-aos-delay="300">
+                    خدمة نقل العفش على مدار الساعة في كل أيام الأسبوع
+                </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="300">
+                    تعد خدمة نقل العفش 24/7 من الخدمات الأساسية التي تقدمها شركة <span class="home-pac">هوم باك</span>
+                    لنقل
+                    العفش، وذلك لضمان راحة ورفاهية عملائنا الكرام. فبفضل هذه الخدمة المتوفرة على مدار الساعة وأيام
+                    الأسبوع، يمكن للعملاء التواصل مع الشركة وطلب خدمات نقل العفش في أي وقت يناسبهم، بما في ذلك العطلات
+                    والأعياد والمناسبات الخاصة.
+                    ويعتبر توفير هذه الخدمة المتاحة على مدار الساعة في كل أيام الأسبوع، إحدى مميزات شركة <span
+                        class="home-pac">هوم باك</span> التي تجعلها
+                    تتفوق على غيرها من شركات نقل العفش في السعودية. فبفضل هذه الميزة،
+                    يمكن للعملاء الحصول على خدمة نقل العفش في أي وقت يناسبهم، بغض النظر عن أوقات العمل الرسمية أو غير
+                    الرسمية. وتضمن شركة <span class="home-pac">هوم باك</span> خدمة نقل العفش 24/7 بفريق عمل مدرب ومجهز
+                    بأحدث
+                    الأدوات والمعدات اللازمة لضمان تقديم خدمة نقل العفش بأفضل جودة وأسرع وقت ممكن. وبفضل فريق العمل
+                    المدرب والمؤهل والمجهز بأحدث الأدوات والمعدات، تتمكن الشركة من تقديم خدمة نقل العفش بأفضل طريقة
+                    ممكنة وبأعلى مستوى من الجودة والمهنية.
+
+                </div>
+            </div>
+
+            <div class="service col-sm-12 col-md-12 col-lg-4">
+                <div class="service-title" data-aos="zoom-out-down" data-aos-duration="800" data-aos-delay="600">
+                    لا للقلق بعد الآن: احصل على خدمة نقل العفش المتميزة السريعة والفعالة </div>
+                <div class="service-description" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="600">
+                    إذا كنت تبحث عن خدمة نقل عفش سريعة وفعالة، فإن شركة <span class="home-pac">هوم باك</span> لنقل العفش
+                    توفر لك ما تحتاجه. نحن
+                    .ندرك جيدًا مدى أهمية نقل العفش بسلاسة وسرعة، ونحن ملتزمون بتوفير خدمة ممتازة وراحة عملائنا.
+                    نحن نتميز بفريق عمل مدرب ومتميز، ونقدم خدماتنا في جميع أنحاء المملكة العربية السعودية. نحن نستخدم
+                    أحدث التقنيات والأدوات لضمان سلامة وحماية العفش الخاص بك، كما نتبع إجراءات صارمة للتأكد من عدم حدوث
+                    أي تلف أو خدش للعفش. كما نوفر خدمات متعددة لتناسب جميع احتياجات عملائنا، بما في ذلك خدمات التغليف
+                    والتخزين، وخدمات التفكيك والتركيب. نحن نتعامل مع العفش بعناية فائقة ونتأكد من أن كل قطعة تصل إلى
+                    وجهتها بأمان وبدون تلف.
+                    إذا كنت ترغب في الحصول على خدمة نقل العفش السريعة والفعالة، فلا تتردد في الاتصال بشركة <span
+                        class="home-pac">هوم باك</span> لنقل
+                    العفش. سنقوم بتزويدك بتجربة نقل عفش سلسة ومريحة، دون أي قلق أو إجهاد.
+                    نهديك الثقة في عملية نقل العفش بأسلوب احترافي ومتطور. لا تتردد في الاتصال بنا للحصول على استشارة
+                    مجانية والحصول على خدماتنا المتميزة
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
 
 
@@ -299,6 +562,9 @@
 
     </footer>
 
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
 </body>
 
 </html>
