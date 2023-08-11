@@ -104,7 +104,7 @@ section {
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: var(--white);
     font-size: 2rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     text-align: right;
@@ -357,7 +357,7 @@ hr {
     margin-bottom: 7px;
 }
 
-
+.our-works-video .carousel-item video,
 .our-service .carousel-item video {
     width: 100%;
 
@@ -384,7 +384,7 @@ hr {
     top: 0;
 
 }
-
+.our-works-video .carousel-caption,
 .our-service .carousel-caption {
     color: var(--black);
     position: relative;
@@ -394,7 +394,7 @@ hr {
     /* text-align: center; */
     width: 100%;
 }
-
+.our-works-video .carousel-inner,
 .our-service .carousel-inner {
     margin: auto;
     /* width: 50%; */
@@ -668,7 +668,7 @@ footer .credit span {
 
 
 
-
+.our-works-video .carousel-inner,
 .our-service .carousel-inner {
     margin: auto;
     width: 52.5%;
@@ -676,21 +676,36 @@ footer .credit span {
 
 
 
-
-.whatsapp{
+.whatsapp {
+    cursor: pointer;
     position: sticky;
-    right:10px;   
+    /* تحديد وضع العنصر كثابت */
+    bottom: 20px;
+    /* المسافة من الأسفل */
+    right: -20px;
+    /* المسافة من اليسار */
+    z-index: 100;
+    transform: translateX(-15px);
+    width: fit-content;
 }
+
 .whatsapp i {
-    position: fixed;
-    /* left:0; */
-    /* bottom: 0; */
+
     background-color: #198754;
     padding: 12px;
     border-radius: 50%;
     box-shadow: var(--box-shadow);
     font-size: 26px;
     color: white;
+}
+
+.whatsapp:hover i,
+.whatsapp:focus i {
+    background-color: #198754a4;
+    color: #198754;
+
+    transform: scale(1.2);
+
 }
 
 /* media queries  */
@@ -726,7 +741,7 @@ footer .credit span {
         box-shadow: var(--box-shadow);
         width: 30rem;
         border: var(--border);
-        background: #fff;
+        background-color: var(--white);
         transform: scale(0);
         opacity: 0;
         transform-origin: top right;
@@ -766,6 +781,8 @@ footer .credit span {
     }
 
 
+    
+    .our-works-video  .carousel-inner ,
     .our-service .carousel-inner {
         margin: auto;
         width: 100%;
